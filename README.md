@@ -3,6 +3,7 @@
 Find below .stl files for cookie cutters of some of the TikZlings. Note that they are automatically generated based on the TikZ code, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
 
 [![](./pngs/anteater.png)](./stls/anteater.stl)
+[![](./pngs/bat.png)](./stls/bat.stl)
 [![](./pngs/bear.png)](./stls/bear.stl)
 [![](./pngs/bug.png)](./stls/bug.stl)
 [![](./pngs/cat.png)](./stls/cat.stl)
@@ -22,7 +23,6 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 # To do:
 
 - [ ] ape
-- [ ] bat
 - [ ] bee
 - [ ] coati
 - [ ] elephant

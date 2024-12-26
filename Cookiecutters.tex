@@ -12,7 +12,7 @@
     external/system call/.append={
       ; pdftocairo -svg "\image.pdf" "./svgs/\image.svg"
       ; openscad -o ./stls/\image.stl Cookiecutters.scad -D 'filepath="./svgs/\image.svg"'
-      ; openscad -o ./pngs/\image.png Cookiecutters.scad -D 'filepath="./svgs/\image.svg"' --camera=10,30,210,-2,6,0,5 --colorscheme Tomorrow --render
+      ; openscad -o ./pngs/\image.png Cookiecutters.scad -D 'filepath="./svgs/\image.svg"' --camera=10,30,210,-2,6,0,5 --colorscheme Tomorrow --render --autocenter --viewall
       ; rm \image.{log,md5,dpth}
     }
   },
@@ -24,7 +24,7 @@
 
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
-%\def\tikzlings@names@clist{moles,penguin}
+%\def\tikzlings@names@clist{bat}
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
