@@ -1,0 +1,31 @@
+% !TeX program = txs:///arara
+% arara: pdflatex: {synctex: on, interaction: nonstopmode, shell: yes}
+\documentclass{article}
+
+\usepackage{tikzlings}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=svgs/]
+
+\tikzset{
+  svg export/.style={
+    external/system call/.append={
+      ; pdftocairo -svg "\image.pdf" "\image.svg"
+%      ; openscad -o ./stls/\image.stl Cookiecutters.scad -D filepath='"./svgs/\image.svg"'
+      
+    }
+  }
+}
+
+\begin{document}
+
+\makeatletter
+\foreach \x in \tikzlings@names@clist {
+  \tikzset{svg export}
+  \tikzsetnextfilename{\x}
+  \begin{tikzpicture}
+    \csname\x\endcsname
+  \end{tikzpicture}
+}
+\makeatother
+
+\end{document}
