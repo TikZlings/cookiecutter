@@ -1,4 +1,6 @@
-# Cookie Cutter of the TikZlings
+# Cookie Cutter Templates of the TikZlings
+
+Find below .stl files for cookie cutters of some of the TikZlings
 
 [![](./pngs/anteater.png)](./stls/anteater.stl)
 [![](./pngs/bear.png)](./stls/bear.stl)
