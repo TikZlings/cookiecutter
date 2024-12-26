@@ -2,25 +2,34 @@
 % arara: pdflatex: {synctex: on, interaction: nonstopmode, shell: yes}
 \documentclass{article}
 
-\usepackage{tikzlings}
+\usepackage{xpatch}
+\usepackage{tikzlings,tikzducks}
 \usetikzlibrary{external}
-\tikzexternalize[prefix=svgs/]
+\tikzexternalize
 
 \tikzset{
   svg export/.style={
     external/system call/.append={
-      ; pdftocairo -svg "\image.pdf" "\image.svg"
-%      ; openscad -o ./stls/\image.stl Cookiecutters.scad -D filepath='"./svgs/\image.svg"'
-      
+      ; pdftocairo -svg "\image.pdf" "./svgs/\image.svg"
+      ; openscad -o ./stls/\image.stl Cookiecutters.scad -D 'filepath="./svgs/\image.svg"'
+      ; openscad -o ./pngs/\image.png Cookiecutters.scad -D 'filepath="./svgs/\image.svg"' --camera=10,30,210,-2,6,0,5 --colorscheme Tomorrow --render
+      ; rm \image.{log,pdf,md5,dpth}
     }
-  }
+  },
+  svg export,
+  external/force remake
 }
 
 \begin{document}
 
+%\tikzsetnextfilename{duck}
+%\begin{tikzpicture}
+%  \duck
+%\end{tikzpicture}
+
 \makeatletter
-\foreach \x in \tikzlings@names@clist {
-  \tikzset{svg export}
+\pretocmd{\tikzlings@names@clist}{duck,}{}{}%
+\foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
     \csname\x\endcsname

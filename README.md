@@ -7,6 +7,7 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/bug.png)](./stls/bug.stl)
 [![](./pngs/cat.png)](./stls/cat.stl)
 [![](./pngs/chicken.png)](./stls/chicken.stl)
+[![](./pngs/duck.png)](./stls/duck.stl)
 [![](./pngs/hippo.png)](./stls/hippo.stl)
 [![](./pngs/koala.png)](./stls/koala.stl)
 [![](./pngs/marmot.png)](./stls/marmot.stl)
