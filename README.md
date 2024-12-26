@@ -12,12 +12,15 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/hippo.png)](./stls/hippo.stl)
 [![](./pngs/koala.png)](./stls/koala.stl)
 [![](./pngs/marmot.png)](./stls/marmot.stl)
+[![](./pngs/meerkat.png)](./stls/meerkat.stl)
 [![](./pngs/moles.png)](./stls/moles.stl)
 [![](./pngs/mouse.png)](./stls/mouse.stl)
+[![](./pngs/owl.png)](./stls/owl.stl)
 [![](./pngs/panda.png)](./stls/panda.stl)
 [![](./pngs/penguin.png)](./stls/penguin.stl)
 [![](./pngs/sloth.png)](./stls/sloth.stl)
 [![](./pngs/snowman.png)](./stls/snowman.stl)
+[![](./pngs/squirrel.png)](./stls/squirrel.stl)
 [![](./pngs/wolf.png)](./stls/wolf.stl)
 
 # To do:
@@ -26,9 +29,7 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 - [ ] bee
 - [ ] coati
 - [ ] elephant
-- [ ] meerkat
-- [ ] owl
 - [ ] pig
 - [ ] rhino
 - [ ] sheep
-- [ ] squirrel
+

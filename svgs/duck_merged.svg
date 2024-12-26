@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="57.175"
+   height="57.401"
+   viewBox="0 0 57.175 57.401"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="duck.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip-0">
+      <path
+         clip-rule="nonzero"
+         d="M 0 19 L 56.363281 19 L 56.363281 56.699219 L 0 56.699219 Z M 0 19 "
+         id="path1" />
+    </clipPath>
+    <clipPath
+       id="clip-1">
+      <path
+         clip-rule="nonzero"
+         d="M 8 0.113281 L 37 0.113281 L 37 36 L 8 36 Z M 8 0.113281 "
+         id="path2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip-0)"
+     id="g3">
+    <path
+       id="path3"
+       d="M 22.828125 0.11328125 C 15.113281 0.11328125 8.859375 7.929688 8.859375 17.578125 C 8.859375 17.879517 8.8648847 18.18087 8.8769531 18.478516 C 5.9690964 20.869276 2.5078774 29.546092 11.152344 27.164062 C 11.235056 27.321204 11.321586 27.475358 11.408203 27.628906 C 4.524573 29.417698 -5.4779416 41.452799 5.7578125 52.199219 C 17.351562 63.265625 77.683594 55.859375 48.480469 19.839844 C 42.281141 23.172413 38.183913 24.892617 35.193359 25.710938 C 36.218311 23.281353 36.800781 20.515553 36.800781 17.578125 C 36.800781 7.929688 30.546875 0.11328125 22.828125 0.11328125 z " />
+  </g>
+  <g
+     clip-path="url(#clip-1)"
+     id="g4" />
+</svg>
