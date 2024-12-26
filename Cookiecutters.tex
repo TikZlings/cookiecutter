@@ -21,11 +21,19 @@
   external/force remake
 }
 
+\def\elephanthookforeground{
+  \fill[red] (0.3,1.2) circle [radius=0.3cm];
+}
+\def\apehookforeground{
+  \fill[red] (0.5,1.1) circle [radius=0.3cm];
+  \fill[red] (-0.5,1.1) circle [radius=0.3cm];
+}
+
 \begin{document}
 
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
-%\def\tikzlings@names@clist{owl}
+%\def\tikzlings@names@clist{bee,coati,pig,rhino}
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
