@@ -18,3 +18,17 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/sloth.png)](./stls/sloth.stl)
 [![](./pngs/snowman.png)](./stls/snowman.stl)
 [![](./pngs/wolf.png)](./stls/wolf.stl)
+
+# To do:
+
+- [ ] ape
+- [ ] bat
+- [ ] bee
+- [ ] coati
+- [ ] elephant
+- [ ] meerkat
+- [ ] owl
+- [ ] pig
+- [ ] rhino
+- [ ] sheep
+- [ ] squirrel
