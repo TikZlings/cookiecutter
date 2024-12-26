@@ -31,18 +31,23 @@
 \def\rhinohookforeground{
   \fill[red] (0,0.9) ellipse [x radius=0.6, y radius=0.75];
 }
+\def\pighookforeground{
+  \draw[red] (0,0.83) ellipse [x radius=0.62, y radius=0.69];
+}
+
 
 \begin{document}
 
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
-%\def\tikzlings@names@clist{bee,coati,pig}
-%\def\tikzlings@names@clist{pig}
+%\def\tikzlings@names@clist{bee,coati}
+%\def\tikzlings@names@clist{bee}
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
     \csname\x\endcsname
   \end{tikzpicture}
+  \includegraphics[width=2cm]{./pngs/\x}
 }
 \makeatother
 
