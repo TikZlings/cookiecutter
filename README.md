@@ -20,6 +20,7 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/owl.png)](./stls/owl.stl)
 [![](./pngs/panda.png)](./stls/panda.stl)
 [![](./pngs/penguin.png)](./stls/penguin.stl)
+[![](./pngs/rhino.png)](./stls/rhino.stl)
 [![](./pngs/sheep.png)](./stls/sheep.stl)
 [![](./pngs/sloth.png)](./stls/sloth.stl)
 [![](./pngs/snowman.png)](./stls/snowman.stl)
@@ -31,4 +32,3 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 - [ ] bee
 - [ ] coati
 - [ ] pig
-- [ ] rhino
