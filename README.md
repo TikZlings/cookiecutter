@@ -6,9 +6,11 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/ape.png)](./stls/ape.stl)
 [![](./pngs/bat.png)](./stls/bat.stl)
 [![](./pngs/bear.png)](./stls/bear.stl)
+[![](./pngs/bee.png)](./stls/bee.stl)
 [![](./pngs/bug.png)](./stls/bug.stl)
 [![](./pngs/cat.png)](./stls/cat.stl)
 [![](./pngs/chicken.png)](./stls/chicken.stl)
+[![](./pngs/coati.png)](./stls/coati.stl)
 [![](./pngs/duck.png)](./stls/duck.stl)
 [![](./pngs/elephant.png)](./stls/elephant.stl)
 [![](./pngs/hippo.png)](./stls/hippo.stl)
@@ -27,8 +29,3 @@ Find below .stl files for cookie cutters of some of the TikZlings. Note that the
 [![](./pngs/snowman.png)](./stls/snowman.stl)
 [![](./pngs/squirrel.png)](./stls/squirrel.stl)
 [![](./pngs/wolf.png)](./stls/wolf.stl)
-
-# To do:
-
-- [ ] bee
-- [ ] coati

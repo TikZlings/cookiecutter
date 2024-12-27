@@ -33,8 +33,6 @@
 
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
-%\def\tikzlings@names@clist{bee,coati}
-%\def\tikzlings@names@clist{bee}
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
