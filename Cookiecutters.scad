@@ -18,7 +18,7 @@ scale(2){
             linear_extrude(height=base_height) shape(wall_thickness);
             translate([0, 0, base_height]) linear_extrude(height=upper_height) shape(upper_wall_thickness);
         }
-        translate([0, 0, -1]) linear_extrude(base_height + upper_height + 2) shape();
+        translate([0, 0, -1]) linear_extrude(base_height + upper_height + 2) shape(0.00001);
     }
   }
 }
