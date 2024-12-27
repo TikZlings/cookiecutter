@@ -1,6 +1,6 @@
 # Cookie Cutter Templates of the TikZlings
 
-[![CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![License](https://img.shields.io/github/license/TikZlings/cookiecutter.svg?color=blue)](https://www.latex-project.org/lppl.txt)
 
 Find below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
 
