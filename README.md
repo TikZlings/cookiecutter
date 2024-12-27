@@ -1,5 +1,7 @@
 # Cookie Cutter Templates of the TikZlings
 
+[![CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
+
 Find below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
 
 <a href="./stls/anteater.stl"><img src="./pngs/anteater.png" alt="Anteater" height="128"></a>
