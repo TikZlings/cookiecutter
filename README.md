@@ -1,6 +1,6 @@
 # Cookie Cutter Templates of the TikZlings
 
-Find below .stl files for cookie cutters of the TikZlings. Note that they are automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
+Find below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
 
 <a href="./stls/anteater.stl"><img src="./pngs/anteater.png" alt="Anteater" height="128"></a>
 <a href="./stls/ape.stl"><img src="./pngs/ape.png" alt="Ape" height="128"></a>

@@ -1,11 +1,10 @@
 % !TeX program = txs:///arara
 % arara: pdflatex: {synctex: on, interaction: nonstopmode, shell: yes}
-\documentclass{article}
+\documentclass[varwidth]{standalone}
 
 \usepackage{xpatch}
 \usepackage{tikzlings,tikzducks}
 \usetikzlibrary{external}
-\tikzexternalize
 
 \tikzset{
   svg export/.style={
@@ -21,6 +20,7 @@
   external/force remake
 }
 
+% adjustments to make parts more robust for baking
 \def\elephanthookforeground{
   \fill[red] (0.3,1.2) circle [radius=0.3cm];
 }
@@ -28,11 +28,36 @@
   \fill[red] (0.5,1.1) circle [radius=0.3cm];
   \fill[red] (-0.5,1.1) circle [radius=0.3cm];
 }
+\def\beehookforeground{
+  \fill[red,rotate around={15:(-0.175,2.115)}] (-0.24,1.93) rectangle (-0.1,2.3);
+  \fill[red,rotate around={-15:(0.175,2.115)}] (0.24,1.93) rectangle (0.1,2.3);
+}
+\def\bughookforeground{
+  \draw[red,line width=2pt] (0.1134, 1.911) .. controls (0.0917, 2.0537) and (0.0986, 2.1999) .. (0.1608, 2.2816) .. controls (0.245, 2.3919) and (0.3278, 2.3011) .. (0.3272, 2.2192) .. controls (0.3266, 2.1341) and (0.2237, 2.0423) .. (0.1978, 2.1538);
+  \draw[red,line width=2pt] (-0.1134, 1.911) .. controls (-0.0917, 2.0537) and (-0.0986, 2.1999) .. (-0.1608, 2.2816) .. controls (-0.245, 2.3919) and (-0.3278, 2.3011) .. (-0.3272, 2.2192) .. controls (-0.3266, 2.1341) and (-0.2237, 2.0423) .. (-0.1978, 2.1538);
+}
+\def\chickenhookforeground{
+  \fill[red] (0.21,0.32) ellipse[x radius=0.06, y radius=0.12];
+  \fill[red] (-0.21,0.32) ellipse[x radius=0.06, y radius=0.12];
+}
+\def\mousehookforeground{
+  \fill[red,xshift=0.01cm,yshift=-0.03cm] (0.2845, 0.5595) .. controls (0.6382, 0.8326) and (0.7302, 1.5138) .. (1.0504, 1.6639) .. controls (1.3206, 1.7840) and (1.7609, 1.3537) .. (1.5608, 1.3437) .. controls (0.9203, 2.0442) and (0.8642, 0.6247) .. (0.5001, 0.3831) .. controls (0.3214, 0.2645) and (-0.1764, 0.1117) .. (-0.1408, 0.3245) .. controls (-0.1082, 0.5191) and (0.0508, 0.3791) .. (0.2845, 0.5595) -- cycle;
+}
+\def\sheephookforeground{
+  \fill[red] (-0.255,0.17) ellipse[x radius=0.23, y radius=0.09];
+  \fill[red] (0.255,0.17) ellipse[x radius=0.23, y radius=0.09];
+}
+\def\squirrelhookforeground{
+  \fill[red] (0.5,0.9) circle [radius=0.25cm];
+}
+
+\tikzexternalize
 
 \begin{document}
 
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
+%\def\tikzlings@names@clist{bee,bug,chicken,mouse,sheep,squirrel}%
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \begin{tikzpicture}
