@@ -8,6 +8,7 @@ upper_wall_thickness = 0.9;
 
 module shape(offset_amt=0){
   offset(offset_amt)
+  // scale(0.66)
   import(filepath);
 }
 
