@@ -1,6 +1,5 @@
 % !TeX document-id = {7c0dd487-c1c0-4fc6-93e8-4291b97cfd9c}
 % !TeX program = txs:///arara | find . -maxdepth 1 -not -name 'Cookiecutters.pdf' -name '*.pdf' -delete
-
 % arara: pdflatex: {synctex: on, interaction: nonstopmode, shell: yes}
 % arara: clean: { extensions: [ aux, log, auxlock, synctex.gz ] }
 \documentclass[varwidth,border=0.5cm]{standalone}
@@ -54,6 +53,7 @@
 \def\squirrelhookbackground{
   \fill[lightgray] (0.5,0.9) circle [radius=0.25cm];
 }
+\def\battext{bat}
 
 \tikzexternalize
 
@@ -62,14 +62,16 @@
 \sffamily
 \makeatletter
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
-%\def\tikzlings@names@clist{ape}%
+%\def\tikzlings@names@clist{bat}%
 \foreach \x in \tikzlings@names@clist {%
   \tikzsetnextfilename{\x}
   \makebox[1.5cm][l]{\MakeTitlecase{\x}:}\hfill
   \raisebox{-1.05cm}{%
   \scalebox{-1}[1]{%
   \begin{tikzpicture}
+    \ifx\x\battext\bat[wings=0.6]\else
     \csname\x\endcsname
+    \fi
   \end{tikzpicture}}}\hfill
   \includegraphics[width=3cm,valign=c]{./pngs/\x}
   \linebreak
