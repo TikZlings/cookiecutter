@@ -1,5 +1,8 @@
-% !TeX program = txs:///arara
+% !TeX document-id = {7c0dd487-c1c0-4fc6-93e8-4291b97cfd9c}
+% !TeX program = txs:///arara | find . -maxdepth 1 -not -name 'Cookiecutters.pdf' -name '*.pdf' -delete
+
 % arara: pdflatex: {synctex: on, interaction: nonstopmode, shell: yes}
+% arara: clean: { extensions: [ aux, log, auxlock, synctex.gz ] }
 \documentclass[varwidth,border=0.5cm]{standalone}
 
 \usepackage{xpatch}
