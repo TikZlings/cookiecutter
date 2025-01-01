@@ -14,8 +14,7 @@
     external/system call/.append={
       ; pdftocairo -svg "\image.pdf" "./svgs/\image.svg"
       ; inkscape -g --actions="select-all; object-to-path; select-all; path-union; export-filename:./svgs/\image_merged.svg; export-do; quit-immediate;" "./svgs/\image.svg"
-      ; openscad -o ./stls/\image.stl Cookiecutters.scad -D 'filepath="./svgs/\image_merged.svg"'
-      ; openscad -o ./pngs/\image.png Cookiecutters.scad -D 'filepath="./svgs/\image_merged.svg"' --camera=10,30,210,-2,6,0,5 --colorscheme Tomorrow --render --autocenter --viewall
+      ; openscad -o ./stls/\image.stl -o ./pngs/\image.png Cookiecutters.scad -D 'filepath="./svgs/\image_merged.svg"' --camera=10,30,210,-2,6,0,5 --colorscheme Tomorrow --render --autocenter --viewall
       ; rm \image.{log,md5,dpth}
     }
   },
