@@ -1,10 +1,10 @@
-# Cookie Cutter Templates of the TikZlings
-
-[![License](https://img.shields.io/github/license/TikZlings/cookiecutter.svg?color=blue)](https://www.latex-project.org/lppl.txt)
-
-Find below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
-
-&nbsp; | &nbsp; | &nbsp; |
+# Cookie Cutter Templates of the TikZlings 
+ 
+[![License](https://img.shields.io/github/license/TikZlings/cookiecutter.svg?color=blue)](https://www.latex-project.org/lppl.txt) 
+ 
+Find below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :) 
+ 
+&nbsp; | &nbsp; | &nbsp; | 
 ---|:---:|---
  duck| <img src="./svgs/duck.svg" alt="duck" height="100"> | <a href="./stls/duck.stl"><img src="./pngs/duck.png" alt="duck" height="128"></a> 
  anteater| <img src="./svgs/anteater.svg" alt="anteater" height="100"> | <a href="./stls/anteater.stl"><img src="./pngs/anteater.png" alt="anteater" height="128"></a> 

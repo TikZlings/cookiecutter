@@ -57,6 +57,18 @@
 }
 \def\battext{bat}
 
+% readme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newwrite\readme
+\immediate\openout\readme=README.md
+\immediate\write\readme{\string# Cookie Cutter Templates of the TikZlings
+^^J
+^^J[![License](https://img.shields.io/github/license/TikZlings/cookiecutter.svg?color=blue)](https://www.latex-project.org/lppl.txt)
+^^J
+^^JFind below .stl files for cookie cutters of the TikZlings. Note that they are mostly automatically generated, so some of the body parts might be too small and break off during baking, but they should nevertheless be tasty :)
+^^J
+^^J&nbsp; | &nbsp; | &nbsp; |
+^^J---|:---:|---}
+
 \tikzexternalize
 
 \begin{document}
@@ -77,6 +89,9 @@
   \end{tikzpicture}}}\hfill
   \includegraphics[width=3cm,valign=c]{./pngs/\x}
   \linebreak
+  \immediate\write\readme{
+    \x | <img src="./svgs/\x.svg" alt="\x" height="100"> | <a href="./stls/\x.stl"><img src="./pngs/\x.png" alt="\x" height="128"></a>
+  }
 }
 \makeatother
 
