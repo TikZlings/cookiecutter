@@ -16,6 +16,7 @@ Find below .stl files for cookie cutters of the TikZlings. Note that they are mo
  cat| <img src="./svgs/cat.svg" alt="cat" height="100"> | <a href="./stls/cat.stl"><img src="./pngs/cat.png" alt="cat" height="128"></a> 
  chicken| <img src="./svgs/chicken.svg" alt="chicken" height="100"> | <a href="./stls/chicken.stl"><img src="./pngs/chicken.png" alt="chicken" height="128"></a> 
  coati| <img src="./svgs/coati.svg" alt="coati" height="100"> | <a href="./stls/coati.stl"><img src="./pngs/coati.png" alt="coati" height="128"></a> 
+ dog| <img src="./svgs/dog.svg" alt="dog" height="100"> | <a href="./stls/dog.stl"><img src="./pngs/dog.png" alt="dog" height="128"></a> 
  elephant| <img src="./svgs/elephant.svg" alt="elephant" height="100"> | <a href="./stls/elephant.stl"><img src="./pngs/elephant.png" alt="elephant" height="128"></a> 
  hippo| <img src="./svgs/hippo.svg" alt="hippo" height="100"> | <a href="./stls/hippo.stl"><img src="./pngs/hippo.png" alt="hippo" height="128"></a> 
  koala| <img src="./svgs/koala.svg" alt="koala" height="100"> | <a href="./stls/koala.stl"><img src="./pngs/koala.png" alt="koala" height="128"></a> 
