@@ -1,23 +1,31 @@
-// modified from https://gist.github.com/aconz2/fa3bce871305f5be39aedd00e7e0c94b
-
-base_height = 12;
-upper_height = 3;
+// parameters
 wall_thickness = 0.9;
-upper_wall_thickness = 2.7;
-// filepath = "./svgs/duck.svg"; 
+rim_thickness = 2.7;
 
-module shape(offset_amt=0){
-  offset(offset_amt)
-  scale(2.7)
-  import(filepath);
-}
+wall_height = 15;
+rim_height = 3;
+
+svg_scale = 2.7;
+// filepath = "./svgs/pig_merged.svg";
 
 rotate([0,180,0]){
-  difference(){
-      union(){
-        linear_extrude(height=base_height) shape(wall_thickness);
-        translate([0, 0, base_height]) linear_extrude(height=upper_height) shape(upper_wall_thickness);
-      }
-      translate([0, 0, -1]) linear_extrude(base_height + upper_height + 6) shape(0.00003);
-  }// difference
+  union(){
+
+    linear_extrude(height=wall_height){
+      difference(){
+        offset(wall_thickness) scale(svg_scale) import(filepath);
+        offset(0.001) scale(svg_scale) import(filepath);
+      }// difference
+    }// extrude
+
+    translate([0, 0, wall_height-rim_height]){
+      linear_extrude(height=rim_height){
+        difference(){
+          offset(rim_thickness) scale(svg_scale) import(filepath);
+          offset(0.001) scale(svg_scale) import(filepath);
+        }// difference
+      }// extrude
+    }// translate
+
+  }// union
 }// rotate
