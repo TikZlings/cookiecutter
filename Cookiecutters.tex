@@ -57,6 +57,7 @@
   \path (-1.63,0.1) rectangle (1.63,2.26);
 }
 \def\battext{bat}
+\def\snowmantext{snowman}
 
 % readme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newwrite\readme
@@ -87,6 +88,7 @@
     \ifx\x\battext\bat[wings=0.6]\else
     \csname\x\endcsname
     \fi
+    \ifx\x\snowmantext\thing[tophat,rotate=10,xshift=0.24cm]\fi
   \end{tikzpicture}}}\hfill
   \includegraphics[width=3cm,valign=c]{./pngs/\x}
   \linebreak
