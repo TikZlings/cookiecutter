@@ -69,13 +69,16 @@
 ^^J&nbsp; | &nbsp; | &nbsp; |
 ^^J---|:---:|---}
 
+\ExplSyntaxOn
+\cs_new_eq:NN \StrIfEqTF \str_if_eq:eeTF
+\ExplSyntaxOff
+
 \tikzexternalize
 
 \begin{document}
 
 \sffamily
 \makeatletter
-\ExplSyntaxOn
 \pretocmd{\tikzlings@names@clist}{duck,}{}{}%
 %\def\tikzlings@names@clist{bat}%
 \foreach \x in \tikzlings@names@clist {%
@@ -84,7 +87,7 @@
   \raisebox{-1.05cm}{%
   \scalebox{-1}[1]{%
   \begin{tikzpicture}
-    \str_if_eq:eeTF{\x}{bat}{
+    \StrIfEqTF{\x}{bat}{
       \bat[wings=0.6]
     }{
       \csname\x\endcsname
@@ -93,10 +96,9 @@
   \includegraphics[width=3cm,valign=c]{./pngs/\x}
   \linebreak
   \immediate\write\readme{
-    \x~|~<img~src="./svgs/\x.svg"~alt="\x"~height="100">~|~<a~ href="./stls/\x.stl"><img~src="./pngs/\x.png"~alt="\x"~height="128"></a>
+    \x | <img src="./svgs/\x.svg" alt="\x" height="100"> | <a  href="./stls/\x.stl"><img src="./pngs/\x.png" alt="\x" height="128"></a>
   }
 }
-\ExplSyntaxOff
 \makeatother
 
 \end{document}
