@@ -6,6 +6,8 @@
 
 \usepackage{xpatch}
 \usepackage{tikzlings,tikzducks}
+\usepackage{jigsaw}
+\include{Chess}
 \usetikzlibrary{external}
 \usepackage[export]{adjustbox}
 
@@ -93,6 +95,70 @@
       \csname\x\endcsname
     }
   \end{tikzpicture}}}\hfill
+  \includegraphics[width=3cm,valign=c]{./pngs/\x}
+  \linebreak
+  \immediate\write\readme{
+    \x | <img src="./svgs/\x.svg" alt="\x" height="100"> | <a  href="./stls/\x.stl"><img src="./pngs/\x.png" alt="\x" height="128"></a>
+  }
+}
+\makeatother
+
+\immediate\write\readme{^^J
+\string# Jigsaw Cookie Cutter Templates
+^^J
+^^JFind below .stl files for cutters based on the `jigsaw` package. They probably won't fit together after baking, but you can try :)
+^^J
+^^J&nbsp; | &nbsp; | &nbsp; |
+^^J---|:---:|---}
+
+\colorlet{jigsawcolor}{lightgray}
+
+\makeatletter
+\foreach \x [count=\xi] in { 
+  \piece[jigsawcolor]{1}{0}{0}{-1},
+  \piece[jigsawcolor]{-1}{1}{0}{-1},
+  \piece[jigsawcolor]{1}{-1}{1}{-1},
+  \piece[jigsawcolor]{1}{1}{0}{-1}%
+}{%
+  \tikzsetnextfilename{jigsaw-\xi}
+  \makebox[1.5cm][l]{Jigsaw~\xi:}\hfill
+  \begin{adjustbox}{valign=c}
+  \scalebox{-1.5}[1.5]{%
+  \begin{tikzpicture}
+    \color{jigsawcolor}
+    \x
+  \end{tikzpicture}}%
+  \end{adjustbox}%
+  \hfill
+  \includegraphics[width=3cm,valign=c]{./pngs/jigsaw-\xi}
+  \linebreak
+  \immediate\write\readme{
+    Jigsaw-\xi | <img src="./svgs/jigsaw-\xi.svg" alt="Jigsaw Piece" height="100"> | <a  href="./stls/jigsaw-\xi.stl"><img src="./pngs/jigsaw-\xi.png" alt="Jigsaw Piece" height="128"></a>
+  }
+}
+\makeatother
+
+\immediate\write\readme{^^J
+\string# Chess Cookie Cutter Templates
+^^J
+^^JFind below .stl files for cutters based on chess pieces. The shapes of the chess pieces have been inspired by the `fontawsome5` package
+^^J
+^^J&nbsp; | &nbsp; | &nbsp; |
+^^J---|:---:|---}
+
+\colorlet{chesscolor}{lightgray}
+
+\makeatletter
+\foreach \x in {king,queen,rook,knight,bishop,pawn}{%
+  \tikzsetnextfilename{\x}
+  \makebox[1.5cm][l]{\MakeTitlecase{\x}:}\hfill
+  \begin{adjustbox}{valign=c}
+  \scalebox{-1.5}[1.5]{%
+  \begin{tikzpicture}[scale=3]
+    \fill[chesscolor] \csname\x\endcsname
+  \end{tikzpicture}}%
+  \end{adjustbox}%
+  \hfill
   \includegraphics[width=3cm,valign=c]{./pngs/\x}
   \linebreak
   \immediate\write\readme{

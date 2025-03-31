@@ -34,3 +34,27 @@ Find below .stl files for cookie cutters of the TikZlings. Note that they are mo
  snowman| <img src="./svgs/snowman.svg" alt="snowman" height="100"> | <a href="./stls/snowman.stl"><img src="./pngs/snowman.png" alt="snowman" height="128"></a> 
  squirrel| <img src="./svgs/squirrel.svg" alt="squirrel" height="100"> | <a href="./stls/squirrel.stl"><img src="./pngs/squirrel.png" alt="squirrel" height="128"></a> 
  wolf| <img src="./svgs/wolf.svg" alt="wolf" height="100"> | <a href="./stls/wolf.stl"><img src="./pngs/wolf.png" alt="wolf" height="128"></a> 
+
+ # Jigsaw Cookie Cutter Templates 
+ 
+Find below .stl files for cutters based on the `jigsaw` package. They probably won't fit together after baking, but you can try :) 
+ 
+&nbsp; | &nbsp; | &nbsp; | 
+---|:---:|---
+ Jigsaw-1| <img src="./svgs/jigsaw-1.svg" alt="Jigsaw Piece" height="100"> | <a href="./stls/jigsaw-1.stl"><img src="./pngs/jigsaw-1.png" alt="Jigsaw Piece" height="128"></a> 
+ Jigsaw-2| <img src="./svgs/jigsaw-2.svg" alt="Jigsaw Piece" height="100"> | <a href="./stls/jigsaw-2.stl"><img src="./pngs/jigsaw-2.png" alt="Jigsaw Piece" height="128"></a> 
+ Jigsaw-3| <img src="./svgs/jigsaw-3.svg" alt="Jigsaw Piece" height="100"> | <a href="./stls/jigsaw-3.stl"><img src="./pngs/jigsaw-3.png" alt="Jigsaw Piece" height="128"></a> 
+ Jigsaw-4| <img src="./svgs/jigsaw-4.svg" alt="Jigsaw Piece" height="100"> | <a href="./stls/jigsaw-4.stl"><img src="./pngs/jigsaw-4.png" alt="Jigsaw Piece" height="128"></a> 
+
+ # Chess Cookie Cutter Templates 
+ 
+Find below .stl files for cutters based on chess pieces. The shapes of the chess pieces have been inspired by the `fontawsome5` package 
+ 
+&nbsp; | &nbsp; | &nbsp; | 
+---|:---:|---
+ king| <img src="./svgs/king.svg" alt="king" height="100"> | <a href="./stls/king.stl"><img src="./pngs/king.png" alt="king" height="128"></a> 
+ queen| <img src="./svgs/queen.svg" alt="queen" height="100"> | <a href="./stls/queen.stl"><img src="./pngs/queen.png" alt="queen" height="128"></a> 
+ rook| <img src="./svgs/rook.svg" alt="rook" height="100"> | <a href="./stls/rook.stl"><img src="./pngs/rook.png" alt="rook" height="128"></a> 
+ knight| <img src="./svgs/knight.svg" alt="knight" height="100"> | <a href="./stls/knight.stl"><img src="./pngs/knight.png" alt="knight" height="128"></a> 
+ bishop| <img src="./svgs/bishop.svg" alt="bishop" height="100"> | <a href="./stls/bishop.stl"><img src="./pngs/bishop.png" alt="bishop" height="128"></a> 
+ pawn| <img src="./svgs/pawn.svg" alt="pawn" height="100"> | <a href="./stls/pawn.stl"><img src="./pngs/pawn.png" alt="pawn" height="128"></a> 
