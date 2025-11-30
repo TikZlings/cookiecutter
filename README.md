@@ -33,6 +33,7 @@ Find below .stl files for cookie cutters of the TikZlings. Note that they are mo
  sloth| <img src="./svgs/sloth.svg" alt="sloth" height="100"> | <a href="./stls/sloth.stl"><img src="./pngs/sloth.png" alt="sloth" height="128"></a> 
  snowman| <img src="./svgs/snowman.svg" alt="snowman" height="100"> | <a href="./stls/snowman.stl"><img src="./pngs/snowman.png" alt="snowman" height="128"></a> 
  squirrel| <img src="./svgs/squirrel.svg" alt="squirrel" height="100"> | <a href="./stls/squirrel.stl"><img src="./pngs/squirrel.png" alt="squirrel" height="128"></a> 
+ turkey| <img src="./svgs/turkey.svg" alt="turkey" height="100"> | <a href="./stls/turkey.stl"><img src="./pngs/turkey.png" alt="turkey" height="128"></a> 
  wolf| <img src="./svgs/wolf.svg" alt="wolf" height="100"> | <a href="./stls/wolf.stl"><img src="./pngs/wolf.png" alt="wolf" height="128"></a> 
 
  # Jigsaw Cookie Cutter Templates 
